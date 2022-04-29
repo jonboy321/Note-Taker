@@ -19,6 +19,8 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/notes.html'));
 });
 
+
+
 app.use((req, res) => {
     res.status(404).end();
   });
